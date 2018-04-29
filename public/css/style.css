@@ -1,0 +1,26 @@
+section {
+	padding: 0 20px;
+}
+
+#entry-box {
+    margin: 20px;
+}
+
+.app-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.app-title h1{
+	font-weight: bold;
+	font-size: 30px;
+    margin-top: 50px;
+}
+
+.direct-chat-messages {height: 350px;}
+.hidden {display: none !important;visibility: none !important;}
+.alert-danger {margin: 20px;}
+
+@media(min-width: 768px){
+	.app-title h1 {font-size: 40px;}	
+}

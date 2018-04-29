@@ -1,0 +1,37 @@
+include header.pug
+body
+.row
+	.col-lg-4.col-xs-12
+	.col-lg-4.col-xs-12
+		.app-title
+			h1 my chat
+			h6
+				| Powered by 
+				b socket.io
+		.alert.alert-danger.hidden
+		#entry-box.card.card-primary
+			.card-header
+				h3.card-title Enter your name
+			form#form1
+				.card-body
+					.form-group
+						input#name.form-control(type='text', placeholder='Enter your name', required='true', autocomplete='off')
+				.card-footer
+					button.btn.btn-primary(type='submit') Submit
+		section#chat-box.hidden
+			.card.direct-chat.direct-chat-primary
+				.card-header
+					h5.card-title Direct Chat
+					.card-tools
+						span.badge.badge-primary(data-toggle='tooltip', title='3 online users', rel='tooltip') 3
+				.card-body
+					.direct-chat-messages
+						ul#messages
+				.card-footer
+					form#form2
+						.input-group
+							input#m.form-control(type='text', name='message', placeholder='Type Message ...', required='true', autocomplete='off')
+							span.input-group-append
+								button#btn-send.btn.btn-primary(type='submit') Send
+	.col-lg-4.col-xs-12
+include footer.pug
